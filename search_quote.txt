@@ -1,0 +1,7 @@
+906: .floating-quote {
+926: .floating-quote:hover {
+931: .quote-icon {
+936: .quote-pulse {
+2943: <a href="#dang-ky" class="floating-quote" title="Nhận Báo Giá & Ưu Đãi">
+2944: <div class="quote-pulse"></div>
+2945: <div class="quote-icon">

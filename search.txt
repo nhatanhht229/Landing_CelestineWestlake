@@ -1,0 +1,33 @@
+352: .mp-carousel {
+356: .mp-track {
+362: .mp-slide {
+371: .mp-slide img {
+378: .mp-arrow {
+397: .mp-arrow:hover {
+402: .mp-arrow.mp-prev {
+406: .mp-arrow.mp-next {
+410: .mp-dots {
+417: .mp-dot {
+428: .mp-dot.active {
+434: .mp-label {
+2125: class="mp-carousel w-full bg-cyan-900/20 rounded-lg px-12 md:px-16 py-2 border border-amber-900/20 shadow-2xl overflow-hidden"
+2126: id="mp-carousel">
+2127: <div class="mp-track" id="mp-track">
+2128: <div class="mp-slide"><img alt="Mặt bằng tầng 4" src="images/mat bang tang 4.png"></div>
+2129: <div class="mp-slide"><img alt="Mặt bằng tầng 5, 7, 9, 13, 15, 17"
+2131: <div class="mp-slide"><img alt="Mặt bằng tầng 6, 8, 10, 12, 14, 16"
+2133: <div class="mp-slide"><img alt="Mặt bằng tầng 8, 20" src="images/mat bang tang 8 20.png"></div>
+2134: <div class="mp-slide"><img alt="Mặt bằng tầng 19, 21" src="images/mat bang tang 19 21.png"></div>
+2136: <button class="mp-arrow mp-prev" id="mp-prev" aria-label="Ảnh trước"><span
+2138: <button class="mp-arrow mp-next" id="mp-next" aria-label="Ảnh sau"><span
+2141: <div class="mp-dots" id="mp-dots"></div>
+2142: <div class="mp-label" id="mp-label"></div>
+3175: var track = document.getElementById('mp-track');
+3176: var slides = track ? track.querySelectorAll('.mp-slide') : [];
+3177: var dotsWrap = document.getElementById('mp-dots');
+3178: var labelEl = document.getElementById('mp-label');
+3188: dot.className = 'mp-dot' + (i === 0 ? ' active' : '');
+3202: dotsWrap.querySelectorAll('.mp-dot').forEach(function (d, i) {
+3221: document.getElementById('mp-prev').addEventListener('click', function () { prev(); resetAuto(); });
+3222: document.getElementById('mp-next').addEventListener('click', function () { next(); resetAuto(); });
+3225: var carousel = document.getElementById('mp-carousel');
